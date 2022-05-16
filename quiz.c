@@ -2,7 +2,6 @@
 #include <conio.h>
 int main()
 {
-
   char q;
   char r;
   int m = 100;
@@ -83,7 +82,7 @@ int main()
     break;
   }
 
-  printf("\nWhich one is the biggest ocean of the world?\n");
+  printf("\n3.Which one is the biggest ocean of the world?\n");
   printf("A. Atlantic ocean\tB. Pacific ocean\nC. Indonesian ocean\tD. none of them");
   printf("\nAnswer:");
   scanf("\n%c", &r);
@@ -107,7 +106,7 @@ int main()
     break;
   }
 
-  printf("\nWhat is the name of Batman character in movie?\n");
+  printf("\n4.What is the name of Batman character in movie?\n");
   printf("A. Harvey dent\tB. Louis Fox\nC. Bruce Wayne\tD. Max Roger");
   printf("\nAnswer:");
   scanf("\n%c", &r);
@@ -130,7 +129,7 @@ int main()
     goto label;
     break;
   }
-  printf("\nWhich one is the Capital of Afghanistan?\n");
+  printf("\n5.Which one is the Capital of Afghanistan?\n");
   printf("A. Kabul\tB. Istanbul\nC. Syria\tD. Bhurma");
   printf("\nAnswer:");
   scanf("\n%c", &r);
@@ -154,7 +153,7 @@ int main()
     break;
   }
 
-  printf("\nWhich is the biggest mammal in the world?\n");
+  printf("\n6.Which is the biggest mammal in the world?\n");
   printf("A. Elephant\tB. Blue Whale\nC. Rhinosorous \tD. none of them");
   printf("\nAnswer:");
   scanf("\n%c", &r);
@@ -177,7 +176,7 @@ int main()
     goto label;
     break;
   }
-  printf("\nWho is the second richest person in the world?\n");
+  printf("\n7.Who is the second richest person in the world?\n");
   printf("A. Charlos Slim\tB. Bill gates\nC. Steve jobs\tD. Mark zerg berg");
   printf("\nAnswer:");
   scanf("\n%c", &r);
