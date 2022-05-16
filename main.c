@@ -4,6 +4,12 @@
 
 int main(int banyakArgumen, char *argumen[]) //./main username password
 {   
+    FILE *fpw = fopen("database/login.bin", "wb");
+    char login[20] = "Sayfull@Code";
+
+    fwrite(login, sizeof(char), sizeof(login)/sizeof(char), fpw);
+    fclose(fpw);
+
     if(banyakArgumen != 3){
         printf("Gagal login!");
         printf("\nCara Penggunaan : ./FileAplikasiProgramUtama username password");
@@ -17,7 +23,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
 
     if((fpr = fopen("database/login.bin", "rb")) == NULL){
         printf("Gagal membuka file!");
-        return EXIT_FAILURE;
+         return EXIT_FAILURE;
     }
 
     char akun[20];
