@@ -9,17 +9,17 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     if(banyakArgumen == 1)
     {
         system ("mkdir database");
-        FILE *fpw = fopen("database/login.bin", "wb");
-        printf("daftar akun dengan format username@password : ");
+        FILE *fpw = fopen("database/login.bin", "wb+");
+        printf("Register your account, type with format 'username@password' : ");
         scanf("%s", & *login);
         fwrite(login, sizeof(char), sizeof(login)/sizeof(char), fpw);
         fclose(fpw);
-        printf("Jika ingin melanjutkan proses login, ketik\n./FileAplikasiProgramUtama username password\n");
+        printf("If you want to continue the login process, type\n'./FileApplicationMainProgram username password'\n");
     }
 
     else if(banyakArgumen != 3)
     {
-        printf("Input yang anda masukkan tidak sesuai format");
+        printf("The input you entered doesn't match the format");
         exit(0);    
     }
     
@@ -53,7 +53,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     
     while(string[ctrl++] == NULL)
     {
-     printf("anda belum membuat akun\njika ingin registrasi ketik dengan format : ./fileaplikasiprogramutama");
+     printf("You haven't created an account, if you want to register type\n'./FileApplicationMainProgram'");
     }
     
     strcpy(username, string[0]);
@@ -61,10 +61,10 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
 
     if( (strcmp(usernameInput, username) == 0) && (strcmp(passwordInput, password) == 0))
     {
-        printf("Selamat, Anda berhasil login !");
+        printf("LOGIN SUCCESS!");
     }
     else 
     {
-        printf("Password atau username yang anda masukkan salah");
+      printf("The username or password you entered does not match the account you last registered\nPlease login again with an existing account or\nRegister a new one wih type './FileApplicationMainProgram'");
     }
 }
