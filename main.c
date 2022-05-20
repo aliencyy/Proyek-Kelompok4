@@ -53,7 +53,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     
     while(string[ctrl++] == NULL)
     {
-     printf("You haven't created an account, if you want to register type\n'./FileApplicationMainProgram'");
+        printf("You haven't created an account, if you want to register type\n'./FileApplicationMainProgram'");
     }
     
     strcpy(username, string[0]);
@@ -65,6 +65,6 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     }
     else 
     {
-      printf("The username or password you entered does not match the account you last registered\nPlease login again with an existing account or\nRegister a new one wih type './FileApplicationMainProgram'");
+        printf("The username or password you entered does not match the account you last registered\nPlease login again with an existing account or\nRegister a new one wih type './FileApplicationMainProgram'");
     }
 }
