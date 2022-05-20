@@ -8,6 +8,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     
     if(banyakArgumen == 1)
     {
+        system ("mkdir database");
         FILE *fpw = fopen("database/login.bin", "wb");
         printf("daftar akun dengan format username@password : ");
         scanf("%s", & *login);
