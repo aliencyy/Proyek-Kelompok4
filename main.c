@@ -32,13 +32,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     strcpy(passwordInput, argumen[2]);
 
     FILE *fpr;
-
-    if((fpr = fopen("database/login.bin", "rb")) == NULL)
-    {
-        printf("Gagal membuka file!");
-         return EXIT_FAILURE;
-    }
-
+    
     char akun[20];
     
     fread(akun, sizeof(char), sizeof(akun)/sizeof(char), fpr);
