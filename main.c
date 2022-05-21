@@ -2,11 +2,11 @@
 #include<stdlib.h>
 #include<string.h>
 
-int main(int banyakArgumen, char *argumen[]) //./main username password
+int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untuk login
 {   
     char login[50];
     
-    if(banyakArgumen == 1)
+    if(banyakArgumen == 1) //menjalankan program untuk registrasi akun
     {
         system ("mkdir database");
         FILE *fpw = fopen("database/login.bin", "wb+");
@@ -17,36 +17,33 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
         printf("If you want to continue the login process, type\n'./FileApplicationMainProgram username password'\n");
     }
 
-    else if(banyakArgumen != 3)
+    else if(banyakArgumen != 3) //memberitahu user bahwa input yang dimasukkan tidak sesuai format
     {
         printf("The input you entered doesn't match the format");
         exit(0);    
     }
     
-    while(banyakArgumen==3)
+    while(banyakArgumen==3) //melanjutkan program ketika user memasukkan 3 buah argumen sesuai format
     {
         break;
     }
     
-    char usernameInput[10], passwordInput[10];
+    char usernameInput[10], passwordInput[10]; // mengcopy input yg berupa argumen yang dimasukkan oleh user pada variabel usernameInput dan passwordInput
     strcpy(usernameInput, argumen[1]);
     strcpy(passwordInput, argumen[2]);
 
-    FILE *fpr;
-    
+    FILE *fpr = fopen("database/login.bin", "rb"); //membaca file login.bin hasil yang diinputkan oleh user
     char akun[20];
-    
     fread(akun, sizeof(char), sizeof(akun)/sizeof(char), fpr);
-
     fclose(fpr);
 
-    char *string[3];
+    char *string[3]; //deklarasi variabel
     char username[20], password[20];
     int ctrl = 0;
 
     string[0] = strtok(akun, "@");
     
-    while(string[ctrl++] != NULL)
+    while(string[ctrl++] != NULL) //jika user menginput username dan pw sesuai format maka akan dipisah dan dicopy pada variabel username dan password 
     {
         string[ctrl] = strtok(NULL, "@");
     }
@@ -59,7 +56,8 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
     strcpy(username, string[0]);
     strcpy(password, string[1]);
 
-    if( (strcmp(usernameInput, username) == 0) && (strcmp(passwordInput, password) == 0))
+    if( (strcmp(usernameInput, username) == 0) && (strcmp(passwordInput, password) == 0)) 
+        //membandingkan username & pw yg diinput user dengan yang ada pd file login.bin jika sama maka login succes dan masuk ke dalam game quiz
     {
         printf("LOGIN SUCCESS!");
         
@@ -333,7 +331,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
       getch();           
     }
     
-    else 
+    else //memberitahu pada user jika username dan pw yg diinput tidak sama dengan yg ada pada file login.bin 
     {
         printf("The username or password you entered does not match the account you last registered\nPlease login again with an existing account or\nRegister a new one wih type './FileApplicationMainProgram'");
     }
