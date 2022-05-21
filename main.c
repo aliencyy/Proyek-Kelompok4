@@ -61,10 +61,10 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     {
         printf("LOGIN SUCCESS!");
         
-         char q;
-      char r;
-      int m = 100;
-
+      char q;       // Deklarasi Variabel bertipe char untuk mengecek kelancaran kuis
+      char r;       // Deklarasi Variabel bertipe char untuk mengeseskusi jawabannya  yang betul apa salah
+      int m = 100;  // Deklarasi Variabel bertipe int untuk menampilkan uang
+ 
     printf("\n\n");
     printf("\t\t=============================================\n");
     printf("\t\t|               WELCOME TO                  |\n");
