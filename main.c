@@ -62,7 +62,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
         printf("LOGIN SUCCESS!");
         
       char q;       // Deklarasi Variabel bertipe char untuk mengecek kelancaran kuis
-      char r;       // Deklarasi Variabel bertipe char untuk mengeseskusi jawabannya  yang betul apa salah
+      char r;       // Deklarasi Variabel bertipe char untuk mengesekusi jawabannya  yang benar apa salah
       int m = 100;  // Deklarasi Variabel bertipe int untuk menampilkan uang
  
     printf("\n\n");
@@ -79,7 +79,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\nAnswer:");
     r = getchar();
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'A':
 
@@ -133,7 +133,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\nAnswer:");
     scanf("\n%c", &r);
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'D':
 
@@ -169,7 +169,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\n\nAnswer:");
     scanf("\n%c", &r);
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'B':
       printf("%c is the right answer\n\n", r);
@@ -204,7 +204,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\n\nAnswer:");
     scanf("\n%c", &r);
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'C':
       printf("%c is the right answer\n\n", r);
@@ -239,7 +239,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\n\nAnswer:");
     scanf("\n%c", &r);
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'A':
       printf("%c is the right answer\n\n", r);
@@ -274,7 +274,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\n\nAnswer:");
     scanf("\n%c", &r);
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'B':
 
@@ -310,7 +310,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\n\nAnswer:");
     scanf("\n%c", &r);
 
-      switch (r)
+      switch (r) // Untuk menampilan mana jawabannya benar apa salah
       {
       case 'B':
 
