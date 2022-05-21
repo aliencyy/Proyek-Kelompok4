@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<conio.h>
 
 // PROGRAM SISTEM LOGIN
 int main(int banyakArgumen, char *argumen[]) // CLA yang akan digunakan user untuk login
