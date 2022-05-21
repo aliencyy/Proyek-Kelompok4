@@ -84,7 +84,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       case 'A':
 
       printf("%c is the wrong answer sorry YOU LOSE", r);
-      goto label;
+      goto label; // Untuk mengesekusikan apabila user menjawabnya salah
       break;
 
       case 'B':
