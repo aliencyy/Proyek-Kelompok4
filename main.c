@@ -2,11 +2,13 @@
 #include<stdlib.h>
 #include<string.h>
 
-int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untuk login
+// PROGRAM SISTEM LOGIN
+int main(int banyakArgumen, char *argumen[]) // CLA yang akan digunakan user untuk login
 {   
-    char login[50];
+    char login[50]; // Deklarasi variabel bertipe char
     
-    if(banyakArgumen == 1) //menjalankan program untuk registrasi akun
+	// menjalankan program untuk registrasi akun
+    if(banyakArgumen == 1) 
     {
         system ("mkdir database");
         FILE *fpw = fopen("database/login.bin", "wb+");
@@ -17,37 +19,43 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
         printf("If you want to continue the login process, type\n'./FileApplicationMainProgram username password'\n");
     }
 
-    else if(banyakArgumen != 3) //memberitahu user bahwa input yang dimasukkan tidak sesuai format
+	// memberitahu user bahwa input yang dimasukkan tidak sesuai format
+    else if(banyakArgumen != 3) 
     {
         printf("The input you entered doesn't match the format");
         exit(0);    
     }
-    
-    while(banyakArgumen==3) //melanjutkan program ketika user memasukkan 3 buah argumen sesuai format
+
+    // melanjutkan program ketika user memasukkan 3 buah argumen sesuai format
+    while(banyakArgumen==3) 
     {
         break;
     }
-    
-    char usernameInput[10], passwordInput[10]; // mengcopy input yg berupa argumen yang dimasukkan oleh user pada variabel usernameInput dan passwordInput
+
+    // mengcopy input yg berupa argumen yang dimasukkan oleh user pada variabel usernameInput dan passwordInput
+    char usernameInput[10], passwordInput[10];
     strcpy(usernameInput, argumen[1]);
     strcpy(passwordInput, argumen[2]);
 
-    FILE *fpr = fopen("database/login.bin", "rb"); //membaca file login.bin hasil yang diinputkan oleh user
+	// membaca file login.bin hasil yang diinputkan oleh user
+    FILE *fpr = fopen("database/login.bin", "rb"); 
     char akun[20];
     fread(akun, sizeof(char), sizeof(akun)/sizeof(char), fpr);
     fclose(fpr);
 
-    char *string[3]; //deklarasi variabel
-    char username[20], password[20];
-    int ctrl = 0;
+    char *string[3]; // Deklarasi variabel bertipe string
+    char username[20], password[20]; // Deklarasi variabel bertipe char
+    int ctrl = 0; // Deklarasi variabel bertipe int
 
     string[0] = strtok(akun, "@");
     
-    while(string[ctrl++] != NULL) //jika user menginput username dan pw sesuai format maka akan dipisah dan dicopy pada variabel username dan password 
+	// jika user menginput username dan password sesuai format maka akan dipisah dan dicopy pada variabel username dan password 
+    while(string[ctrl++] != NULL) 
     {
         string[ctrl] = strtok(NULL, "@");
     }
     
+	// jika user salah menginput username dan password
     while(string[ctrl++] == NULL)
     {
         printf("You haven't created an account, if you want to register type\n'./FileApplicationMainProgram'");
@@ -56,11 +64,13 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     strcpy(username, string[0]);
     strcpy(password, string[1]);
 
+	// membandingkan username & password yg diinput user dengan yang ada pada file login.bin 
+	// jika sama maka login succes dan masuk ke dalam game quiz
     if( (strcmp(usernameInput, username) == 0) && (strcmp(passwordInput, password) == 0)) 
-        //membandingkan username & pw yg diinput user dengan yang ada pd file login.bin jika sama maka login succes dan masuk ke dalam game quiz
     {
         printf("LOGIN SUCCESS!");
-        
+    
+	// PROGRAM QUIZ
       char q;       // Deklarasi Variabel bertipe char untuk mengecek untuk melanjutkan atau tidaknya kuis
       char r;       // Deklarasi Variabel bertipe char untuk mengesekusi jawabannya  yang benar apa salah
       int m = 100;  // Deklarasi Variabel bertipe int untuk menampilkan uang
@@ -187,7 +197,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
+        exit(0); // Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -222,7 +232,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
+        exit(0); // Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -257,7 +267,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
+        exit(0); // Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -293,7 +303,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);//Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
+        exit(0); // Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -330,8 +340,9 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       label:
       getch();           
     }
-    
-    else //memberitahu pada user jika username dan pw yg diinput tidak sama dengan yg ada pada file login.bin 
+	
+    // memberitahu pada user jika username dan pw yg diinput tidak sama dengan yg ada pada file login.bin 
+    else 
     {
         printf("The username or password you entered does not match the account you last registered\nPlease login again with an existing account or\nRegister a new one wih type './FileApplicationMainProgram'");
     }
