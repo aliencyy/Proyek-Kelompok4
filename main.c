@@ -71,7 +71,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     printf("\t\t|       Who Wants To Be The Millionare      |\n");
     printf("\t\t=============================================");
     printf("\n\nLet's play the game !!\n");
-    printf("\nYour first Question for $%d is\n", m * 1);
+    printf("\nYour first Question for $%d is\n", m * 1); // Untuk mengesekusikan int m supaya di kalikan 1
     printf("-----------------------------------------\n");
     printf("|1.Who was the founder of Apple Company?|\n");
     printf("-----------------------------------------\n");
@@ -105,7 +105,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       scanf("\n%c", &q);
       if (q == 'm' || q == 'M')
       {
-        printf("\nYour next question for $%d is\n", m * 2);
+        printf("\nYour next question for $%d is\n", m * 2); // Untuk mengesekusikan int m supaya di kalikan 2
       }
       else if (q == 'q' || q == 'Q')
       {
@@ -139,7 +139,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
 
       printf("%c is the right answer\n\n", r);
       printf("-------------------------------------\n");
-      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 2);
+      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 2); // Untuk mengesekusikan int m supaya di kalikan 2
       printf("-------------------------------------\n");
       printf("do you want to play more or go home with this money?\n");
       printf("to play more press : M \n");
@@ -147,7 +147,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       scanf("\n%c", &q);
       if (q == 'm' || q == 'M')
       {
-        printf("\nYour next question for $%d is\n", m * 3);
+        printf("\nYour next question for $%d is\n", m * 3); // Untuk mengesekusikan int m supaya di kalikan 3
       }
       else if (q == 'q' || q == 'Q')
       {
@@ -174,7 +174,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       case 'B':
       printf("%c is the right answer\n\n", r);
       printf("-------------------------------------\n");
-      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 3);
+      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 3); // Untuk mengesekusikan int m supaya di kalikan 3
       printf("-------------------------------------\n");
       printf("do you want to play more or go home with this money?\n");
       printf("to play more press : M \n");
@@ -182,7 +182,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       scanf("\n%c", &q);
       if (q == 'm' || q == 'M')
       {
-        printf("\nYour next question for $%d is\n", m * 4);
+        printf("\nYour next question for $%d is\n", m * 4); // Untuk mengesekusikan int m supaya di kalikan 4
       }
       else if (q == 'q' || q == 'Q')
       {
@@ -209,7 +209,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       case 'C':
       printf("%c is the right answer\n\n", r);
       printf("-------------------------------------\n");
-      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 4);
+      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 4); // Untuk mengesekusikan int m supaya di kalikan 4
       printf("-------------------------------------\n");
       printf("do you want to play more or go home with this money?\n");
       printf("to play more press : M \n");
@@ -217,7 +217,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       scanf("\n%c", &q);
       if (q == 'm' || q == 'M')
       {
-        printf("\nYour next question for $%d is\n", m * 5);
+        printf("\nYour next question for $%d is\n", m * 5); // Untuk mengesekusikan int m supaya di kalikan 5
       }
       else if (q == 'q' || q == 'Q')
       {
@@ -244,7 +244,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       case 'A':
       printf("%c is the right answer\n\n", r);
       printf("-------------------------------------\n");
-      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 5);
+      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 5); // Untuk mengesekusikan int m supaya di kalikan 5
       printf("-------------------------------------\n");
       printf("do you want to play more or go home with this money?\n");
       printf("to play more press : M \n");
@@ -252,7 +252,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       scanf("\n%c", &q);
       if (q == 'm' || q == 'M')
       {
-        printf("\nYour next question for $%d is\n", m * 6);
+        printf("\nYour next question for $%d is\n", m * 6); // Untuk mengesekusikan int m supaya di kalikan 6
       }
       else if (q == 'q' || q == 'Q')
       {
@@ -280,7 +280,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
 
       printf("%c is the right answer\n\n", r);
       printf("-------------------------------------\n");
-      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 6);
+      printf("|     CONGRATULATION YOU WON $%d    |\n", m * 6); //Untuk mengesekusikan int m supaya di kalikan 6
       printf("-------------------------------------\n");
       printf("do you want to play more or go home with this money?\n");
       printf("to play more press : M \n");
@@ -288,7 +288,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       scanf("\n%c", &q);
       if (q == 'm' || q == 'M')
       {
-        printf("\nYour next question for $%d is\n", m * 10);
+        printf("\nYour next question for $%d is\n", m * 10); // Untuk mengesekusikan int m supaya di kalikan 10
       }
       else if (q == 'q' || q == 'Q')
       {
