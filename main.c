@@ -61,7 +61,7 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
     {
         printf("LOGIN SUCCESS!");
         
-      char q;       // Deklarasi Variabel bertipe char untuk mengecek kelancaran kuis
+      char q;       // Deklarasi Variabel bertipe char untuk mengecek untuk melanjutkan atau tidaknya kuis
       char r;       // Deklarasi Variabel bertipe char untuk mengesekusi jawabannya  yang benar apa salah
       int m = 100;  // Deklarasi Variabel bertipe int untuk menampilkan uang
  
@@ -103,14 +103,14 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       printf("to play more press : M \n");
       printf("if you want to quit press : Q\n==> ");
       scanf("\n%c", &q);
-      if (q == 'm' || q == 'M')
+      if (q == 'm' || q == 'M') // Untuk mengesekusikan char q apabila user mau melanjutkan kuis
       {
         printf("\nYour next question for $%d is\n", m * 2); // Untuk mengesekusikan int m supaya di kalikan 2
       }
-      else if (q == 'q' || q == 'Q')
+      else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);
+        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -145,14 +145,14 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       printf("to play more press : M \n");
       printf("if you want to quit press : Q\n==> ");
       scanf("\n%c", &q);
-      if (q == 'm' || q == 'M')
+      if (q == 'm' || q == 'M') // Untuk mengesekusikan char q apabila user mau melanjutkan kuis
       {
         printf("\nYour next question for $%d is\n", m * 3); // Untuk mengesekusikan int m supaya di kalikan 3
       }
-      else if (q == 'q' || q == 'Q')
+      else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);
+        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -180,14 +180,14 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       printf("to play more press : M \n");
       printf("if you want to quit press : Q\n==> ");
       scanf("\n%c", &q);
-      if (q == 'm' || q == 'M')
+      if (q == 'm' || q == 'M') // Untuk mengesekusikan char q apabila user mau melanjutkan kuis
       {
         printf("\nYour next question for $%d is\n", m * 4); // Untuk mengesekusikan int m supaya di kalikan 4
       }
-      else if (q == 'q' || q == 'Q')
+      else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);
+        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -215,14 +215,14 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       printf("to play more press : M \n");
       printf("if you want to quit press : Q\n==> ");
       scanf("\n%c", &q);
-      if (q == 'm' || q == 'M')
+      if (q == 'm' || q == 'M') // Untuk mengesekusikan char q apabila user mau melanjutkan kuis
       {
         printf("\nYour next question for $%d is\n", m * 5); // Untuk mengesekusikan int m supaya di kalikan 5
       }
-      else if (q == 'q' || q == 'Q')
+      else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);
+        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -250,14 +250,14 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       printf("to play more press : M \n");
       printf("if you want to quit press : Q\n==> ");
       scanf("\n%c", &q);
-      if (q == 'm' || q == 'M')
+      if (q == 'm' || q == 'M') // Untuk mengesekusikan char q apabila user mau melanjutkan kuis
       {
         printf("\nYour next question for $%d is\n", m * 6); // Untuk mengesekusikan int m supaya di kalikan 6
       }
-      else if (q == 'q' || q == 'Q')
+      else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);
+        exit(0); //Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
@@ -286,14 +286,14 @@ int main(int banyakArgumen, char *argumen[]) //CLA yang akan digunakan user untu
       printf("to play more press : M \n");
       printf("if you want to quit press : Q\n==> ");
       scanf("\n%c", &q);
-      if (q == 'm' || q == 'M')
+      if (q == 'm' || q == 'M') // Untuk mengesekusikan char q apabila tidak mau melanjutkan kuis
       {
         printf("\nYour next question for $%d is\n", m * 10); // Untuk mengesekusikan int m supaya di kalikan 10
       }
-      else if (q == 'q' || q == 'Q')
+      else if (q == 'q' || q == 'Q') // Untuk mengesekusikan char q apabila user tidak mau melanjutkan kuis
       {
         printf("\nThanks for playing\n\n");
-        exit(0);
+        exit(0);//Berfungsi untuk menghentikan kuis apabila tidak melanjutkan game kuisnya
       }
       break;
 
