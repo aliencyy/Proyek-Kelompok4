@@ -332,6 +332,7 @@ int main(int banyakArgumen, char *argumen[]) //./main username password
       label:
       getch();           
     }
+    
     else 
     {
         printf("The username or password you entered does not match the account you last registered\nPlease login again with an existing account or\nRegister a new one wih type './FileApplicationMainProgram'");
